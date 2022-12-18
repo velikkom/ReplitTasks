@@ -12,15 +12,23 @@ public class NonDuplicate {
                 input.nextInt(), input.nextInt(), input.nextInt(), input.nextInt()};
 
         //WRITE YOUR CODE BELOW:
+        for (int j = 0; j < nums.length; j++) {
+            int each = nums[j];
+            int frequency = 0;
+            for (int i = 0; i < nums.length; i++) {
+                if (nums[i] == each) {
+                    frequency++;
+                }
+            }
 
-        int count = 0;
-        String str = "";
-        for (int each : nums) {
-            for (int each2 : nums) {
+            if (frequency == 1) {
+                System.out.println(each);
+                break;
 
             }
 
         }
+
 
     }
 }
@@ -37,7 +45,7 @@ Example:
 ```
 Input:
   [1, 2, 3, 4, 3, 4, 1]
-
+   1  2  3  4  3  4  1
 Output:
   2
 ```
