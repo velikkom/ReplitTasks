@@ -13,14 +13,7 @@ public class NonDuplicate {
 
         //WRITE YOUR CODE BELOW:
 
-        int count = 0;
-        String str = "";
-        for (int each : nums) {
-            for (int each2 : nums) {
 
-            }
-
-        }
 
     }
 }
@@ -37,7 +30,7 @@ Example:
 ```
 Input:
   [1, 2, 3, 4, 3, 4, 1]
-
+   1  2  3  4  3  4  1
 Output:
   2
 ```
