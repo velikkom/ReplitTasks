@@ -18,16 +18,11 @@ public class NonDuplicate {
         for (int each : nums) {
             for (int each2 : nums) {
 
-
-
-
-
             }
 
         }
-        System.out.println(str);
-    }
 
+    }
 }
      /*
 ### Given an `int []` `nums` that has duplicate numbers,
