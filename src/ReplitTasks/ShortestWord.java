@@ -10,6 +10,32 @@ public class ShortestWord {
         String str = scan.nextLine();
 
         //WRITE YOUR CODE BELOW
+        String[] str1 = str.split(", ");
+        //System.out.println(Arrays.toString(str1));
+        int minumum = str1[0].length();
+        //System.out.println(minumum);
+        //find the shortest word
+        for (String s : str1) {
+            if (s.length() < minumum) {
+                minumum = s.length();
+            }
+        }
+        //count how many shortest word we have
+        int count = 0;
+        for (String each : str1)
+            if (each.length() == minumum) {
+                count++;
+            }
+        //add shortest words to the array its size must be the count
+        String[] result = new String[count];
+        int index = 0;
+        for (String each : str1) {
+            if (each.length()==minumum){
+                result[index]=each;
+                index++;
+            }
+        }
+        System.out.println(Arrays.toString(result));
 
     }
 }
