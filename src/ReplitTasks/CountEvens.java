@@ -18,7 +18,7 @@ public class CountEvens {
         }
         System.out.println("there are "+count+" even number");
 
-cou
+
 
     }
 }
