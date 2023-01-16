@@ -15,11 +15,12 @@ public class ReverseArray {
 
         //WRITE YOUR CODES BELOW:
         System.out.println(Arrays.toString(arr));
-       String[] arr1 = new String[arr.length];
+        String[] arr1 = new String[arr.length];
 
         for (int i = arr.length - 1, j = 0; i >= 0; i--, j++) {
-            arr1[j] = arr[i]; {
-                arr1[i]=arr[j];
+            arr1[j] = arr[i];
+            {
+                arr1[i] = arr[j];
             }
         }
         System.out.println(Arrays.toString(arr1));
